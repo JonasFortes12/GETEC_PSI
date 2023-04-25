@@ -5,22 +5,125 @@
 .navbar_menu {
     margin-left: 10vw;
 }
-  
+
 .navbar-nav-button {
     margin-right: 10vw;
     font-weight: 600;
     margin-left: 15vw;
 }
-  
+
 .nav_button:hover {
     border-bottom: #FF914D solid 2px;
 }
-  
+
 .fonte_menu {
     font-family: 'Archivo', sans-serif;
 }
 
 /* --------------------------------------------------------------  */
+
+/* --------------------------- CARROSSEL ---------------------------  */
+
+.fonte_texto_carrossel {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 500;
+    color: #FF914D;
+    position: absolute;
+    margin-top: -200px;
+    z-index: 2;
+    letter-spacing: 0.25em;
+    margin-left: -4vw;
+
+}
+
+.fonte_texto_carrossel_negrito {
+    font-weight: 600;
+    font-family: 'Archivo', sans-serif;
+    font-size: 4em;
+    color: #FDF7F2;
+    position: absolute;
+    margin-top: -160px;
+    z-index: 2;
+    margin-left: -4vw;
+
+}
+
+.fonte_texto_carrossel_negrito span {
+    font-weight: 800;
+}
+
+.fonte_texto_carrossel_negrito_extra {
+    font-weight: 800;
+    color: #FDF7F2;
+    position: absolute;
+    margin-top: -30px;
+    z-index: 2;
+}
+
+.carrossel_fundo_preto {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 1));
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    max-width: 100%;
+    height: 49vw;
+}
+
+.img_carrossel_um {
+    object-fit: cover;
+    object-position: 0% 60%;
+    height: 49vw;
+}
+
+.img_carrossel_dois {
+    object-fit: cover;
+    object-position: 0% 50%;
+    height: 49vw;
+}
+
+.img_carrossel_tres {
+    object-fit: cover;
+    object-position: 0% 30%;
+    height: 49vw;
+}
+
+.img_carrossel_quatro {
+    object-fit: cover;
+    object-position: 0% 55%;
+    height: 49vw;
+}
+
+/* ----------------------------------------------------------------------  */
+
+/* --------------------------- O QUE FAZEMOS ---------------------------  */
+.marca_texto_laranja {
+    color: #FF914D;
+  }
+  
+  .titulo_primario_secao_oquefazemos{
+    font-weight: bold;
+    font-family: 'Archivo', sans-serif;
+    letter-spacing: 0.25em;  
+  }
+  
+  .titulo_secao_oquefazemos{
+    font-weight: bold;
+    font-family: 'Archivo', sans-serif;
+  }
+  
+  .titulo_dois_secao_oquefazemos{
+    font-family: 'Archivo', sans-serif;
+    letter-spacing: 0.25em;
+    font-size: 1.5vw;  
+    font-weight: 600;
+  }
+  
+  .texto_secao_oquefazemos{
+    font-family: 'Archivo', sans-serif;
+    font-size: 1.3vw;
+  }
+  
+  /* ----------------------------------------------------------------------  */
 
 
 /* === PORQUE GETEC? === */
@@ -36,22 +139,22 @@
     position: absolute;
     background-image: url('../imgs/fundo_porquegetec.jpg');
     /* background-color: #333333; */
-    
-  /* Set a specific height */
-  min-height: 500px; 
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-bottom: 200vh;
 }
 
 .porque_getec_subtitulo {
     text-align: right;
     color: white;
-    position: relative;  
+    position: relative;
 }
 
 .porque_getec_frase {
@@ -99,15 +202,16 @@
 }
 
 
-.linha_card{
+.linha_card {
     margin-left: 28px;
 }
-.icone_porquegetec{
+
+.icone_porquegetec {
     width: 80px;
     padding: 10px;
 }
 
-.titulo_card_porquegetec{
+.titulo_card_porquegetec {
     font-weight: 800;
     font-size: 2em;
 }
