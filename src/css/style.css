@@ -95,6 +95,36 @@
 
 /* ----------------------------------------------------------------------  */
 
+/* --------------------------- O QUE FAZEMOS ---------------------------  */
+.marca_texto_laranja {
+    color: #FF914D;
+  }
+  
+  .titulo_primario_secao_oquefazemos{
+    font-weight: bold;
+    font-family: 'Archivo', sans-serif;
+    letter-spacing: 0.25em;  
+  }
+  
+  .titulo_secao_oquefazemos{
+    font-weight: bold;
+    font-family: 'Archivo', sans-serif;
+  }
+  
+  .titulo_dois_secao_oquefazemos{
+    font-family: 'Archivo', sans-serif;
+    letter-spacing: 0.25em;
+    font-size: 1.5vw;  
+    font-weight: 600;
+  }
+  
+  .texto_secao_oquefazemos{
+    font-family: 'Archivo', sans-serif;
+    font-size: 1.3vw;
+  }
+  
+  /* ----------------------------------------------------------------------  */
+
 
 /* === PORQUE GETEC? === */
 
