@@ -148,7 +148,6 @@ body{
     padding-left: 10vw;
     padding-right: 10vw;
     padding-bottom: 10vh;
-    position: absolute;
     background-image: url('../imgs/fundo_porquegetec.jpg');
     /* background-color: #333333; */
 
@@ -160,7 +159,6 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 200vh;
 }
 
 .porque_getec_subtitulo {
