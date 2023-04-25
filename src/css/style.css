@@ -314,7 +314,7 @@ body{
     color: #fdf7f2;
 }
 
-.linha_dinamica_branca{
+.linha_dinamica_laranja{
     border: 2px solid #ff914d;
 }
 
@@ -342,6 +342,15 @@ body{
 .linha_vertical{
     height: 20%;
     border: 2px solid #ff914d;
+}
+
+.icone_contato{
+    padding-right: 5%;
+    color: #FF914D;
+}
+
+.maps{
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* ________________________________________________________________ */
