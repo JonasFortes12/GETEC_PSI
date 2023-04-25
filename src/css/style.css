@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: 'Archivo', sans-serif;
+    background-color: #fdf7f2;
+
+}
 
 /* --------------------------- BARRA MENU ---------------------------  */
 
@@ -224,9 +231,119 @@
 /* ================== */
 
 
+/* _______________________________Soluções Digitais_________________________________ */
 
 
 
+.titulo_primario{
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.titulo_secundario{
+    font-weight: bolder;
+    font-size: 3.5em;
+}
+
+.linha_dinamica{
+    width: 6%;
+    border: 2px solid #333333;
+}
+
+.linha_cards{
+    width: 25%;
+    border: 2px solid #ff914d;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card{
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fdf7f2;
+}
+
+.card-header {
+    background-color: #fdf7f2;
+}
+
+.card-title {
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.bi {
+    font-size: 2em;
+    color: #333333;
+  }
+
+.marca_texto_laranja{
+    color: #ff914d;
+}
 
 
+/* ________________________________________________________________ */
 
+
+/* _______________________________Softwares_________________________________ */
+
+.secao_softwares{
+    position: relative;
+    background: none;
+    /* background-image: url('../imgs/softwares.jpg'); */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.secao_softwares::before{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../imgs/softwares.jpg');
+    filter: brightness(0.5); /* aplica o filtro de opacidade na imagem de fundo */
+    z-index: -1; /* coloca o pseudo-elemento atrás do conteúdo da div */
+}
+
+.titulo_primario_branco{
+    color: #fdf7f2;
+}
+
+.linha_dinamica_branca{
+    border: 2px solid #ff914d;
+}
+
+.softwares_img {
+    height: 15vh;
+    width: 35vw;
+}
+
+.softwares_logo_img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.paragrafo_softwares{
+    height: 15vh;
+    width: 35vw;
+    color: #fdf7f2;
+    font-weight: light;
+    font-size: 1.3em;
+}
+
+.paragrafo_softwares p{
+    padding-left: 5%;
+}
+.linha_vertical{
+    height: 20%;
+    border: 2px solid #ff914d;
+}
+
+/* ________________________________________________________________ */
