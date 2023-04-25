@@ -1,1 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+/* --------------------------- BARRA MENU ---------------------------  */
+
+.navbar_menu {
+    margin-left: 10vw;
+  }
+  
+  .navbar-nav-button {
+    margin-right: 10vw;
+    font-weight: 600;
+    margin-left: 15vw;
+  }
+  
+  .nav_button:hover {
+    border-bottom: #FF914D solid 2px;
+  }
+  
+  .fonte_menu {
+    font-family: 'Archivo', sans-serif;
+  }
+
+  /* --------------------------------------------------------------  */
