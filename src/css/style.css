@@ -1,23 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* --------------------------- BARRA MENU ---------------------------  */
 
 .navbar_menu {
     margin-left: 10vw;
-  }
+}
   
-  .navbar-nav-button {
+.navbar-nav-button {
     margin-right: 10vw;
     font-weight: 600;
     margin-left: 15vw;
-  }
+}
   
-  .nav_button:hover {
+.nav_button:hover {
     border-bottom: #FF914D solid 2px;
-  }
+}
   
-  .fonte_menu {
+.fonte_menu {
     font-family: 'Archivo', sans-serif;
-  }
+}
 
-  /* --------------------------------------------------------------  */
+/* --------------------------------------------------------------  */
+
+
+/* === PORQUE GETEC? === */
+
+.fundo_porque_getec {
+    font-family: 'Archivo', sans-serif;
+    max-width: 100%;
+    width: 100vw;
+    height: auto;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 10vh;
+    position: absolute;
+    background-image: url('../imgs/fundo_porquegetec.jpg');
+    /* background-color: #333333; */
+    
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    margin-bottom: 200vh;
+}
+
+.porque_getec_subtitulo {
+    text-align: right;
+    color: white;
+    position: relative;  
+}
+
+.porque_getec_frase {
+    text-align: right;
+    color: white;
+    font-weight: 800;
+    line-height: 0.9em;
+    font-size: 3.5em;
+    margin-top: 65px;
+    margin-bottom: 75px;
+}
+
+.porque_getec_subtitulo p {
+    font-size: 1.23em;
+    letter-spacing: 0.25em;
+    font-weight: 500;
+    padding-top: 55px;
+    margin-top: 100px;
+}
+
+.texto_laranja {
+    color: #FF914D;
+}
+
+.linha_laranja {
+    width: 82px;
+    height: 0px;
+    border: 3px solid #FF914D;
+}
+
+.linha_preta {
+    width: 82px;
+    height: 0px;
+    border: 3px solid #333333;
+}
+
+.colada_direita {
+    position: absolute;
+    right: 0px;
+}
+
+.colada_esquerda {
+    position: absolute;
+    left: 0px;
+}
+
+
+.linha_card{
+    margin-left: 28px;
+}
+.icone_porquegetec{
+    width: 80px;
+    padding: 10px;
+}
+
+.titulo_card_porquegetec{
+    font-weight: 800;
+    font-size: 2em;
+}
+
+/* ================== */
