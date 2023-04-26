@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body{
+body {
     font-family: 'Archivo', sans-serif;
     background-color: #fdf7f2;
     overflow-x: hidden;
 }
+
 /* --------------------------- BARRA MENU ---------------------------  */
+
+.navbar {
+    background-color: #FDF7F2 !important;
+    -webkit-box-shadow: 0px 3px 22px -6px rgba(69, 68, 69, 0.69);
+    -moz-box-shadow: 0px 3px 22px -6px rgba(69, 68, 69, 0.69);
+    box-shadow: 0px 3px 22px -6px rgba(69, 68, 69, 0.69);
+}
 
 .navbar_menu {
     margin-left: 4vw;
@@ -18,10 +26,11 @@ body{
     margin-left: 15vw;
     border-bottom: #FDF7F2 solid 2px;
 }
+
 .nav_button {
     border-bottom: #FDF7F2 solid 2px;
-
 }
+
 .nav_button:hover {
     border-bottom: #FF914D solid 2px;
 
@@ -113,31 +122,33 @@ body{
 /* --------------------------- O QUE FAZEMOS ---------------------------  */
 .marca_texto_laranja {
     color: #FF914D;
-  }
-  
-  .titulo_primario_secao_oquefazemos{
+}
+
+.titulo_primario_secao_oquefazemos {
     font-weight: bold;
-    font-family: 'Archivo', sans-serif;
-    letter-spacing: 0.25em;  
-  }
-  
-  .titulo_secao_oquefazemos{
-    font-weight: bold;
-    font-family: 'Archivo', sans-serif;
-  }
-  
-  .titulo_dois_secao_oquefazemos{
     font-family: 'Archivo', sans-serif;
     letter-spacing: 0.25em;
-    font-size: 1.5vw;  
-    font-weight: 600;
-  }
-  
-  .texto_secao_oquefazemos{
+    font-size: 1.23em;
+}
+
+.titulo_secao_oquefazemos {
+    font-weight: lighter;
+    /* color: red; */
     font-family: 'Archivo', sans-serif;
-    font-size: 1.3vw;
-  }
-  
+}
+
+.titulo_dois_secao_oquefazemos {
+    font-family: 'Archivo', sans-serif;
+    letter-spacing: 0.25em;
+    font-size: 1.23em;
+    font-weight: bold;
+}
+
+.texto_secao_oquefazemos {
+    font-family: 'Archivo', sans-serif;
+    font-size: 1.7em;
+}
+
 /* ----------------------------------------------------------------------  */
 
 
@@ -233,28 +244,29 @@ body{
 
 
 
-.titulo_primario{
+.titulo_primario {
     font-weight: bold;
     letter-spacing: 5px;
 }
-.titulo_secundario{
-    font-weight: bolder;
+
+.titulo_secundario {
+    font-weight: 800;
     font-size: 3.5em;
 }
 
-.linha_dinamica{
+.linha_dinamica {
     width: 6%;
     border: 2px solid #333333;
 }
 
-.linha_cards{
+.linha_cards {
     width: 25%;
     border: 2px solid #ff914d;
     margin: 0 auto;
     text-align: center;
 }
 
-.card{
+.card {
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #fdf7f2;
 }
@@ -271,9 +283,9 @@ body{
 .bi {
     font-size: 2em;
     color: #333333;
-  }
+}
 
-.marca_texto_laranja{
+.marca_texto_laranja {
     color: #ff914d;
 }
 
@@ -283,7 +295,7 @@ body{
 
 /* _______________________________Softwares_________________________________ */
 
-.secao_softwares{
+.secao_softwares {
     position: relative;
     background: none;
     /* background-image: url('../imgs/softwares.jpg'); */
@@ -295,7 +307,7 @@ body{
     padding-top: 12vh !important;
 }
 
-.secao_softwares::before{
+.secao_softwares::before {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -317,11 +329,11 @@ body{
     z-index: -1; /* coloca o pseudo-elemento atrás do conteúdo da div */
 }
 
-.titulo_primario_branco{
+.titulo_primario_branco {
     color: #fdf7f2;
 }
 
-.linha_dinamica_laranja{
+.linha_dinamica_laranja {
     border: 2px solid #ff914d;
 }
 
@@ -329,12 +341,12 @@ body{
     height: 15vh;
 }
 
-.softwares_logo_img{
+.softwares_logo_img {
     max-width: 100%;
     max-height: 100%;
 }
 
-.paragrafo_softwares{
+.paragrafo_softwares {
     height: 15vh;
     width: 35vw;
     color: #fdf7f2;
@@ -342,7 +354,7 @@ body{
     font-size: 1.3em;
 }
 
-.paragrafo_softwares p{
+.paragrafo_softwares p {
     padding-left: 5%;
 }
 .linha_vertical{
@@ -354,7 +366,7 @@ body{
 
 
 /* _______________________________Contato e Localização_________________________________ */
-.icone_contato{
+.icone_contato {
     padding-right: 5%;
     color: #FF914D;
 }
@@ -363,6 +375,7 @@ body{
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
     padding: 0;
 }
+
 /* ________________________________________________________________ */
 
 
