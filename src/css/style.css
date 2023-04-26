@@ -384,7 +384,7 @@ body{
 
 .card_servicos {
     border-left: solid 10px #FF914D;
-    height: fit-content;
+    height: 250px;
     width: fit-content;
 }
 
