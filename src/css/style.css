@@ -575,6 +575,7 @@ body{
     background-color:#333333;
     padding-top: 2%;
     padding-bottom: 2%;
+
 }
 
 .footer_img{
@@ -594,17 +595,16 @@ body{
 }
 
 .forma_direita_solucoes {
-    margin-left: -1vw;
-    margin-top: 28vh;
+    margin-top: 35vh;
     position: absolute;
     z-index: 2;
-    right: 0px;
+    right: -85px;
     transform: scaleX(-1);
     padding: 0;
 }
 
 .forma_esquerda_contato {
-    margin-left: -5vw;
+    margin-left: -8vw;
     margin-top: 7vh;
     position: absolute;
 
