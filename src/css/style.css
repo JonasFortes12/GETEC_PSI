@@ -566,13 +566,15 @@ body{
 /* =========== */
 
 
+/* _______________________________Footer_________________________________ */
 .footer{
     background-color:#333333;
-    color: #FDF7F2;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .footer_img{
-    height: 5vh;
+    height: 7vh;
 }
 
 .logo_footer_img{
@@ -603,3 +605,10 @@ body{
     position: absolute;
 
 }
+
+
+.icon_footer{
+    color: #FDF7F2;
+    font-size: 1.3em;
+}
+/* _____________________________________________________________ */
