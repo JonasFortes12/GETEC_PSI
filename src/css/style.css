@@ -291,6 +291,8 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: fit-content;
+    padding-top: 12vh !important;
 }
 
 .secao_softwares::before{
@@ -298,15 +300,20 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: fit-content;
     
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-image: url('../imgs/softwares.jpg');
-    filter: brightness(0.5); /* aplica o filtro de opacidade na imagem de fundo */
+    height: 105%;
+    background-image: linear-gradient(180deg,
+     rgba(51,51,51,0.8044467787114846) 0%,
+     rgba(51,51,51,0.9865196078431373) 100%),
+      url('../imgs/softwares.jpg');
+    /* background-image: url('../imgs/softwares.jpg'); */
+    /* filter: brightness(0.5); */
     z-index: -1; /* coloca o pseudo-elemento atrás do conteúdo da div */
 }
 
@@ -320,7 +327,6 @@ body{
 
 .softwares_img {
     height: 15vh;
-    width: 35vw;
 }
 
 .softwares_logo_img{
@@ -332,7 +338,7 @@ body{
     height: 15vh;
     width: 35vw;
     color: #fdf7f2;
-    font-weight: light;
+    font-weight: lighter;
     font-size: 1.3em;
 }
 
@@ -340,7 +346,7 @@ body{
     padding-left: 5%;
 }
 .linha_vertical{
-    height: 20%;
+    height: 15%;
     border: 2px solid #ff914d;
 }
 
