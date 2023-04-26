@@ -29,6 +29,27 @@ body {
     border: 0px none #ffffff;
   }
 
+  .circulo_animacao{
+    width: 5px;
+    height: 5px;
+    background-color: #FDF7F2;
+    animation: animate 2s linear infinite;
+  }
+
+  @keyframes animate {
+    0% {
+        margin-left: 0px;
+    }
+
+    50% {
+        margin-left: 80px;
+    }
+
+    0% {
+        margin-left: 0px;
+    }
+}
+
 /* --------------------------- BARRA MENU ---------------------------  */
 
 .navbar_menu {
@@ -227,7 +248,8 @@ body {
 
 .linha_laranja {
     width: 82px;
-    border: 3px solid #FF914D;
+    /* border: 3px solid #FF914D; */
+    background-color: #ff914d;
 }
 
 .linha_preta {
@@ -236,6 +258,10 @@ body {
     border: 3px solid #333333;
 }
 
+.linha_servicos{
+    padding-top: -5px;
+    margin-top: -2px;
+}
 
 
 
@@ -277,7 +303,7 @@ body {
 .card_porquegetec::after {
     opacity: 1;
 }
-
+/* ====== NOSSOS SERVICOS ====== */
 .card_servicos {
     transition: transform .3s;
     
@@ -301,6 +327,7 @@ body {
 .card_servicos::after {
     opacity: 1;
 }
+
 
 
 
@@ -341,7 +368,7 @@ body {
 
 .linha_dinamica {
     width: 82px;
-    border: 3px solid #333333;
+    background-color: #333333;
 }
 
 .linha_cards {
