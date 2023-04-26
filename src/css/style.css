@@ -263,7 +263,11 @@ body{
     /* border: 3px solid #FF914D; */
     background-color: #ff914d;
 }
-
+.linha_laranja_card {
+    width: 82px;
+    border: 3px solid #FF914D;
+    /* background-color: #ff914d; */
+}
 .linha_preta {
     width: 82px;
     height: 0px;
@@ -340,28 +344,6 @@ body{
     opacity: 1;
 }
 
-
-
-
-
-/* .card_porquegetec:hover {
-    transition: all 0.2s ease-out;
-    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
-    top: -4px;
-    border: 1px solid #cccccc;
-    background-color: white;
-  }
-
-.card_porquegetec:before {
-    transform-origin: 50% 50%;
-    transition: transform 0.15s ease-out;
-  }
-
-  .card_porquegetec:hover:before {
-    transform: scale(2.15);
-  } */
-
-/* ================== */
 
 
 /* _______________________________Soluções Digitais_________________________________ */
@@ -500,6 +482,9 @@ body{
     padding: 0;
 }
 
+.contato_localizacao{
+    margin-top: 10vh;
+}
 /* ________________________________________________________________ */
 
 
@@ -575,6 +560,7 @@ body{
     background-color:#333333;
     padding-top: 2%;
     padding-bottom: 2%;
+    margin-bottom: -5%;
 
 }
 
