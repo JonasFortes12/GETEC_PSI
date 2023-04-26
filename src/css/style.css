@@ -4,9 +4,8 @@
 body{
     font-family: 'Archivo', sans-serif;
     background-color: #fdf7f2;
-
+    overflow-x: hidden;
 }
-
 /* --------------------------- BARRA MENU ---------------------------  */
 
 .navbar_menu {
@@ -140,13 +139,14 @@ body{
 
 /* === SEÇÃO PORQUE GETEC? === */
 
+
 .fundo_porque_getec {
     font-family: 'Archivo', sans-serif;
-    max-width: 100%;
-    width: 100vw;
+    /* max-width: 100%; */
+    /* width: 100vw; */
     height: auto;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    /* padding-left: 5vw;
+    padding-right: 5vw; */
     padding-bottom: 10vh;
     background-image: url('../imgs/fundo_porquegetec.jpg');
     /* background-color: #333333; */
@@ -155,6 +155,11 @@ body{
     min-height: 500px;
 
     /* Create the parallax scrolling effect */
+    padding-top: 2vh;
+    background-image: url('../imgs/fundo_porquegetec.jpg');
+
+    min-height: 500px;
+
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -164,25 +169,22 @@ body{
 .porque_getec_subtitulo {
     text-align: right;
     color: white;
+    color: #FFFFFF;
     position: relative;
 }
 
 .porque_getec_frase {
     text-align: right;
-    color: white;
+    color: #FFFFFF;
     font-weight: 800;
     line-height: 0.9em;
     font-size: 3.5em;
-    margin-top: 65px;
-    margin-bottom: 75px;
 }
 
 .porque_getec_subtitulo p {
     font-size: 1.23em;
     letter-spacing: 0.25em;
     font-weight: 500;
-    padding-top: 55px;
-    margin-top: 100px;
 }
 
 .texto_laranja {
@@ -193,6 +195,7 @@ body{
     width: 82px;
     height: 0px;
     border: 3px solid #FF914D;
+    /* margin-left: 80vw; */
 }
 
 .linha_preta {
@@ -201,15 +204,7 @@ body{
     border: 3px solid #333333;
 }
 
-.colada_direita {
-    position: absolute;
-    right: 0px;
-}
 
-.colada_esquerda {
-    position: absolute;
-    left: 0px;
-}
 
 
 .linha_card {
@@ -223,7 +218,7 @@ body{
 
 .titulo_card_porquegetec {
     font-weight: 800;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 /* ================== */
@@ -357,3 +352,69 @@ body{
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
 }
 /* ________________________________________________________________ */
+
+
+/* ====== NOSSOS SERVIÇOS ====== */
+
+.servicos_subtitulo {
+    font-family: 'Archivo', sans-serif;
+    font-size: 1.23em;
+    letter-spacing: 0.25em;
+    font-weight: 700;
+}
+
+.servicos_titulo {
+    font-family: 'Archivo', sans-serif;
+    font-size: 1.23em;
+    font-weight: 800;
+    line-height: 1.1em;
+    font-size: 3.5em;
+}
+
+.servicos_titulo span {
+    color: #FF914D;
+}
+
+.card_servicos {
+    border-left: solid 10px #FF914D;
+    height: fit-content;
+    width: fit-content;
+}
+
+.icone_servicos {
+    background-color: #FF914D;
+    width: 50px;
+    height: 50px;
+}
+
+.icone_servicos i {
+    font-size: 1.5em;
+    color: #fdf7f2;
+}
+
+.titulo_servico {
+    font-family: 'Archivo', sans-serif;
+    font-size: 1.2em;
+    width: 250px;
+    font-weight: 600;
+}
+
+.img_servico {
+    width: 300px;
+    height: 90px;
+    border: none;
+    border-radius: 0px 6px 0px 0px;
+}
+
+.objeto_3d {
+    position: absolute;
+    z-index: -1;
+    margin-top: -95vh;
+    /* margin-left: 75vw;  */
+    margin-left: 40vw;
+    width: 120vw;
+    height: 120vh;
+
+}
+
+/* =========== */
