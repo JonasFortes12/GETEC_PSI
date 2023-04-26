@@ -16,10 +16,15 @@ body{
     margin-right: 10vw;
     font-weight: 600;
     margin-left: 15vw;
+    border-bottom: #FDF7F2 solid 2px;
 }
+.nav_button {
+    border-bottom: #FDF7F2 solid 2px;
 
+}
 .nav_button:hover {
     border-bottom: #FF914D solid 2px;
+
 }
 
 .fonte_menu {
