@@ -1,10 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body {
+body{
     font-family: 'Archivo', sans-serif;
     background-color: #fdf7f2;
     overflow-x: hidden;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: none;
+    scrollbar-color: #ff914d #fdf7f2;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #fdf7f2;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ff914d;
+    border-radius: 0px;
+    border: 0px none #ffffff;
+  }
+
+  .circulo_animacao{
+    width: 5px;
+    height: 5px;
+    background-color: #FDF7F2;
+    animation: animate 2s linear infinite;
+  }
+
+  @keyframes animate {
+    0% {
+        margin-left: 0px;
+    }
+
+    50% {
+        margin-left: 80px;
+    }
+
+    0% {
+        margin-left: 0px;
+    }
 }
 
 /* --------------------------- BARRA MENU ---------------------------  */
@@ -172,7 +215,7 @@ body {
 
     /* Create the parallax scrolling effect */
     padding-top: 2vh;
-    background-image: url('../imgs/fundo_porquegetec.jpg');
+    background-image: radial-gradient(at right 60%, rgba(51, 51, 51, 0.93) 0%, rgba(51, 51, 51, 0.87) 34%, rgba(51, 51, 51, 0) 68%), url('../imgs/fundo_porquegetec.jpg');
 
     min-height: 500px;
 
@@ -180,6 +223,10 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.text_card_porquegetec {
+    font-size: 1.08em;
 }
 
 .porque_getec_subtitulo {
@@ -209,9 +256,8 @@ body {
 
 .linha_laranja {
     width: 82px;
-    height: 0px;
-    border: 3px solid #FF914D;
-    /* margin-left: 80vw; */
+    /* border: 3px solid #FF914D; */
+    background-color: #ff914d;
 }
 
 .linha_preta {
@@ -220,6 +266,10 @@ body {
     border: 3px solid #333333;
 }
 
+.linha_servicos{
+    padding-top: -5px;
+    margin-top: -2px;
+}
 
 
 
@@ -236,6 +286,76 @@ body {
     font-weight: 800;
     font-size: 1.8em;
 }
+
+
+.card_porquegetec {
+    transition: transform .3s;
+    
+}
+.card_porquegetec::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 2s cubic-bezier(.165, .84, .44, 1);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
+    content: '';
+    opacity: 0;
+    z-index: -1;
+}
+.card_porquegetec:hover,
+.card_porquegetec:focus {
+    transform: scale3d(1.1, 1.1, 1);
+}
+.card_porquegetec::after {
+    opacity: 1;
+}
+/* ====== NOSSOS SERVICOS ====== */
+.card_servicos {
+    transition: transform .3s;
+    
+}
+.card_servicos::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 2s cubic-bezier(.165, .84, .44, 1);
+    /* box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15); */
+    content: '';
+    opacity: 0;
+    z-index: -1;
+}
+.card_servicos:hover,
+.card_servicos:focus {
+    transform: scale3d(1.1, 1.1, 1);
+}
+.card_servicos::after {
+    opacity: 1;
+}
+
+
+
+
+
+/* .card_porquegetec:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 1px solid #cccccc;
+    background-color: white;
+  }
+
+.card_porquegetec:before {
+    transform-origin: 50% 50%;
+    transition: transform 0.15s ease-out;
+  }
+
+  .card_porquegetec:hover:before {
+    transform: scale(2.15);
+  } */
 
 /* ================== */
 
@@ -255,11 +375,12 @@ body {
 }
 
 .linha_dinamica {
-    width: 6%;
-    border: 2px solid #333333;
+    width: 82px;
+    background-color: #333333;
 }
 
 .linha_cards {
+    width: 25%;
     width: 25%;
     border: 2px solid #ff914d;
     margin: 0 auto;
@@ -297,6 +418,7 @@ body {
 
 .secao_softwares {
     position: relative;
+    position: relative;
     background: none;
     /* background-image: url('../imgs/softwares.jpg'); */
     background-attachment: fixed;
@@ -306,35 +428,33 @@ body {
     height: fit-content;
     padding-top: 12vh !important;
 }
-
-.secao_softwares::before {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: fit-content;
-    
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 105%;
-    background-image: linear-gradient(180deg,
-     rgba(51,51,51,0.8044467787114846) 0%,
-     rgba(51,51,51,0.9865196078431373) 100%),
-      url('../imgs/softwares.jpg');
-    /* background-image: url('../imgs/softwares.jpg'); */
-    /* filter: brightness(0.5); */
-    z-index: -1; /* coloca o pseudo-elemento atrás do conteúdo da div */
-}
-
+    .secao_softwares::before {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: fit-content;
+        
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 105%;
+        background-image: linear-gradient(180deg,
+         rgba(51,51,51,0.8044467787114846) 0%,
+         rgba(51,51,51,0.9865196078431373) 100%),
+          url('../imgs/softwares.jpg');
+        /* background-image: url('../imgs/softwares.jpg'); */
+        /* filter: brightness(0.5); */
+        z-index: -1; /* coloca o pseudo-elemento atrás do conteúdo da div */
+    }
 .titulo_primario_branco {
     color: #fdf7f2;
 }
 
 .linha_dinamica_laranja {
-    border: 2px solid #ff914d;
+    border: 3px solid #ff914d;
 }
 
 .softwares_img {
@@ -402,8 +522,9 @@ body {
 
 .card_servicos {
     border-left: solid 10px #FF914D;
-    height: fit-content;
+    height: 250px;
     width: fit-content;
+    z-index: 2;
 }
 
 .icone_servicos {
@@ -457,4 +578,28 @@ body {
 .logo_footer_img{
     max-width: 100%;
     max-height: 100%;
+}
+
+.forma_esquerda_solucoes {
+    margin-left: -1vw;
+    margin-top: -20vh;
+    position: absolute;
+    padding: 0;
+}
+
+.forma_direita_solucoes {
+    margin-left: -1vw;
+    margin-top: 28vh;
+    position: absolute;
+    z-index: 2;
+    right: 0px;
+    transform: scaleX(-1);
+    padding: 0;
+}
+
+.forma_esquerda_contato {
+    margin-left: -5vw;
+    margin-top: 7vh;
+    position: absolute;
+
 }
