@@ -132,7 +132,8 @@ body {
 }
 
 .titulo_secao_oquefazemos {
-    font-weight: bold;
+    font-weight: lighter;
+    /* color: red; */
     font-family: 'Archivo', sans-serif;
 }
 
@@ -249,7 +250,7 @@ body {
 }
 
 .titulo_secundario {
-    font-weight: bolder;
+    font-weight: 800;
     font-size: 3.5em;
 }
 
