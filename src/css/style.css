@@ -119,6 +119,7 @@ body{
     font-weight: bold;
     font-family: 'Archivo', sans-serif;
     letter-spacing: 0.25em;  
+    font-size: 1.23em;
   }
   
   .titulo_secao_oquefazemos{
@@ -129,13 +130,13 @@ body{
   .titulo_dois_secao_oquefazemos{
     font-family: 'Archivo', sans-serif;
     letter-spacing: 0.25em;
-    font-size: 1.5vw;  
-    font-weight: 600;
+    font-size: 1.23em;  
+    font-weight: bold;
   }
   
   .texto_secao_oquefazemos{
     font-family: 'Archivo', sans-serif;
-    font-size: 1.3vw;
+    font-size: 1.7em;
   }
   
 /* ----------------------------------------------------------------------  */
