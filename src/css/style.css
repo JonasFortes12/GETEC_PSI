@@ -53,30 +53,34 @@ body{
 /* --------------------------- BARRA MENU ---------------------------  */
 
 .navbar {
+    /* position: relative; */
     background-color: #FDF7F2 !important;
     -webkit-box-shadow: 0px 3px 22px -6px rgba(69, 68, 69, 0.69);
     -moz-box-shadow: 0px 3px 22px -6px rgba(69, 68, 69, 0.69);
     box-shadow: 0px 3px 22px -6px rgba(69, 68, 69, 0.69);
+    padding: 0;
 }
 
-.navbar_menu {
-    margin-left: 4vw;
+.navbar_menu_logo_img {
+    margin-left: 8vw;
+    width: 10%;
+    height: 3%;
 }
 
 .navbar-nav-button {
-    margin-right: 10vw;
+    margin-right: 7vw;
     font-weight: 600;
     margin-left: 15vw;
     border-bottom: #FDF7F2 solid 2px;
 }
 
 .nav_button {
-    border-bottom: #FDF7F2 solid 2px;
+    border-bottom: #FDF7F2 solid 4px;
+    padding: 1.5vw;
 }
 
 .nav_button:hover {
-    border-bottom: #FF914D solid 2px;
-
+    border-bottom: #FF914D solid 4px;
 }
 
 .fonte_menu {
