@@ -425,3 +425,28 @@ body{
 }
 
 /* =========== */
+
+
+.forma_esquerda_solucoes{
+    margin-left: -1vw;
+    margin-top: -20vh;
+    position: absolute;
+    padding: 0;
+}
+
+.forma_direita_solucoes{
+    margin-left: -1vw;
+    margin-top: 28vh;
+    position: absolute;
+    z-index: 2;
+    right: 0px;
+    transform: scaleX(-1);
+    padding: 0;
+}
+
+.forma_esquerda_contato{
+    margin-left: -5vw;
+    margin-top: 7vh;
+    position: absolute;
+
+}
