@@ -171,6 +171,9 @@ body{
     background-size: cover;
 }
 
+.text_card_porquegetec{
+    font-size: 1.08em;
+}
 
 .porque_getec_subtitulo {
     text-align: right;
