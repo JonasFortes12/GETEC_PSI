@@ -1,0 +1,17 @@
+@media (max-width: 1300px) {
+    .objeto_3d {
+        display: none;
+    }
+
+    .forma_direita_solucoes {
+        display: none;
+    }
+
+    .forma_esquerda_solucoes {
+        display: none;
+    }
+
+    .forma_esquerda_contato {
+        display: none;
+    }
+}
