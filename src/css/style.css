@@ -178,12 +178,6 @@ body{
     font-size: 1.23em;
 }
 
-.titulo_secao_oquefazemos {
-    font-weight: lighter;
-    /* color: red; */
-    font-family: 'Archivo', sans-serif;
-}
-
 .titulo_dois_secao_oquefazemos {
     font-family: 'Archivo', sans-serif;
     letter-spacing: 0.25em;
@@ -205,28 +199,22 @@ body{
 
 .fundo_porque_getec {
     font-family: 'Archivo', sans-serif;
-    /* max-width: 100%; */
-    /* width: 100vw; */
     height: auto;
-    /* padding-left: 5vw;
-    padding-right: 5vw; */
     padding-bottom: 10vh;
     background-image: url('../imgs/fundo_porquegetec.jpg');
-    /* background-color: #333333; */
-
-    /* Set a specific height */
     min-height: 500px;
-
-    /* Create the parallax scrolling effect */
     padding-top: 2vh;
     background-image: radial-gradient(at right 60%, rgba(51, 51, 51, 0.93) 0%, rgba(51, 51, 51, 0.87) 34%, rgba(51, 51, 51, 0) 68%), url('../imgs/fundo_porquegetec.jpg');
-
     min-height: 500px;
-
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.titulo_primario_secao_porque_getec{
+    font-weight: 800;
+    font-size: 1.015em;
 }
 
 .text_card_porquegetec {

@@ -15,3 +15,26 @@
         display: none;
     }
 }
+
+@media (max-width: 1300px) {
+
+    .titulo_primario_secao_porque_getec {
+        font-size: 0.7em;
+        margin-right: 3vw;
+        margin-left: 3vw;
+    }
+   
+    .titulo_secundario {
+        font-size: 2.45em;
+        margin-right: 3vw;
+        margin-left: 3vw;
+    }
+
+    .servicos_titulo {
+        font-size: 2.45em;
+        margin-right: 3vw;
+        margin-left: 3vw;
+    }
+
+
+}
