@@ -360,7 +360,8 @@ body{
 }
 
 .maps{
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 0;
 }
 /* ________________________________________________________________ */
 
@@ -429,3 +430,18 @@ body{
 }
 
 /* =========== */
+
+
+.footer{
+    background-color:#333333;
+    color: #FDF7F2;
+}
+
+.footer_img{
+    height: 5vh;
+}
+
+.logo_footer_img{
+    max-width: 100%;
+    max-height: 100%;
+}
