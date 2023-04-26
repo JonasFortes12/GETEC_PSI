@@ -198,9 +198,7 @@ body{
 
 .linha_laranja {
     width: 82px;
-    height: 0px;
     border: 3px solid #FF914D;
-    /* margin-left: 80vw; */
 }
 
 .linha_preta {
@@ -243,8 +241,8 @@ body{
 }
 
 .linha_dinamica{
-    width: 6%;
-    border: 2px solid #333333;
+    width: 82px;
+    border: 3px solid #333333;
 }
 
 .linha_cards{
@@ -315,7 +313,7 @@ body{
 }
 
 .linha_dinamica_laranja{
-    border: 2px solid #ff914d;
+    border: 3px solid #ff914d;
 }
 
 .softwares_img {
