@@ -7,13 +7,13 @@ body {
     overflow-x: hidden;
 }
 
-/* 
+
 * {
     scrollbar-width: none;
     scrollbar-color: #ff914d #fdf7f2;
 }
 
-
+/* Scrollbar */
 *::-webkit-scrollbar {
     width: 8px;
 }
@@ -26,7 +26,8 @@ body {
     background-color: #ff914d;
     border-radius: 0px;
     border: 0px none #ffffff;
-} */
+}
+
 /* ANIMACAO LINHAS */
 .circulo_animacao {
     width: 5px;
@@ -68,7 +69,7 @@ body {
 }
 
 .opcoes_menu{
-    margin-left: 38vw;
+    margin-left: 30vw;
 }
 
 .topnav a {
@@ -76,13 +77,17 @@ body {
     display: block;
     color: #333333;
     text-align: center;
-    padding: 26px 28px;
+    padding: 26px 24px;
     text-decoration: none;
     font-size: 17px;
     font-weight: 600;
     border-bottom: 5px solid #FDF7F2;
     /* letter-spacing: 0.1em; */
     /* margin-left: 40px; */
+}
+.opcoes_menu i {
+    font-size: 1.2em;
+    padding-right: 5px;
 }
 
 .topnav img {
