@@ -316,7 +316,7 @@ body {
     font-family: 'Archivo', sans-serif;
     height: auto;
     padding-bottom: 10vh;
-    background-image: url('../imgs/fundo_porquegetec.jpg');
+    background-image: url('../imgs/fundo_porquegetec_progressive.jpg');
     min-height: 500px;
     padding-top: 2vh;
     background-image: radial-gradient(at right 60%, rgba(51, 51, 51, 0.93) 0%, rgba(51, 51, 51, 0.87) 34%, rgba(51, 51, 51, 0) 68%), url('../imgs/fundo_porquegetec.jpg');
@@ -326,6 +326,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+   
 
 .titulo_primario_secao_porque_getec {
     font-weight: 800;
@@ -545,7 +546,7 @@ body {
     background-image: linear-gradient(180deg,
             rgba(51, 51, 51, 0.8044467787114846) 0%,
             rgba(51, 51, 51, 0.9865196078431373) 100%),
-        url('../imgs/softwares.jpg');
+        url('../imgs/fundo_softwares_progressive.jpg');
     /* background-image: url('../imgs/softwares.jpg'); */
     /* filter: brightness(0.5); */
     z-index: -1;
