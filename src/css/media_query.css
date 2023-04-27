@@ -14,6 +14,40 @@
     .forma_esquerda_contato {
         display: none;
     }
+
+    .linha_vertical {
+        height: 10%;
+    }
+
+    .paragrafo_softwares p {
+        padding-left: 10%;
+    }
+
+    .softwares_img {
+        height: 15vh;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    .paragrafo_softwares {
+        height: 15vh;
+        width: 75vw;
+        color: #fdf7f2;
+        font-weight: lighter;
+        font-size: 1.3em;
+        
+    }
+
+    .coluna_espaço_software {
+        display: none !important;
+    }
+
+    .texto_secao_oquefazemos {
+        font-size: 1.2em;
+    }
+    .linha_espaço_oque_fazemos {
+        display: none !important;
+    }
 }
 
 @media (max-width: 1300px) {

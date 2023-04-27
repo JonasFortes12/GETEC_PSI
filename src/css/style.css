@@ -1,42 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body{
+body {
     font-family: 'Archivo', sans-serif;
     background-color: #fdf7f2;
     overflow-x: hidden;
 }
 
-/* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
+
+* {
     scrollbar-width: none;
     scrollbar-color: #ff914d #fdf7f2;
-  }
+}
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
+/* Scrollbar */
+*::-webkit-scrollbar {
     width: 8px;
-  }
+}
 
-  *::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
     background: #fdf7f2;
-  }
+}
 
-  *::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     background-color: #ff914d;
     border-radius: 0px;
     border: 0px none #ffffff;
-  }
+}
 
-  .circulo_animacao{
+/* ANIMACAO LINHAS */
+.circulo_animacao {
     width: 5px;
     height: 5px;
     background-color: #FDF7F2;
     animation: animate 2s linear infinite;
-  }
+}
 
-  @keyframes animate {
+@keyframes animate {
     0% {
         margin-left: 0px;
     }
@@ -51,6 +51,116 @@ body{
 }
 
 /* --------------------------- BARRA MENU ---------------------------  */
+.menu_horizontal {
+    width: 100vw;
+    max-width: 100%;
+    height: fit-content;
+    position: fixed;
+    z-index: 3;
+    -webkit-box-shadow: 0px 3px 22px -6px rgba(69, 68, 69, 0.69);
+    -moz-box-shadow: 0px 3px 22px -6px rgba(69, 68, 69, 0.69);
+    box-shadow: 0px 3px 22px -6px rgba(69, 68, 69, 0.69);
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #FDF7F2;
+
+}
+
+.opcoes_menu{
+    margin-left: 30vw;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #333333;
+    text-align: center;
+    padding: 26px 24px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    border-bottom: 5px solid #FDF7F2;
+    /* letter-spacing: 0.1em; */
+    /* margin-left: 40px; */
+}
+.opcoes_menu i {
+    font-size: 1.2em;
+    padding-right: 5px;
+}
+
+.topnav img {
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 5px solid #FDF7F2;
+    margin-top: 1.5vh;
+    margin-left: 9vw;
+}
+
+.topnav img {
+    width: 170px;
+    height: 55px;
+    align-items: center;
+}
+
+.topnav a:hover {
+    /* background-color: #FF914D; */
+    border-bottom: 5px solid #FF914D;
+    /* color: #333333; */
+}
+
+.topnav a.active {
+    background-color: #FF914D;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 1510px) {
+    .topnav a {
+        display: none;
+    }
+
+    
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 1510px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive img {
+        display: none;
+    }
+    
+}
+
+/* ------------------------------------------------------------------ */
 
 .navbar {
     /* position: relative; */
@@ -212,7 +322,7 @@ body{
     background-size: cover;
 }
 
-.titulo_primario_secao_porque_getec{
+.titulo_primario_secao_porque_getec {
     font-weight: 800;
     font-size: 1.015em;
 }
@@ -251,18 +361,20 @@ body{
     /* border: 3px solid #FF914D; */
     background-color: #ff914d;
 }
+
 .linha_laranja_card {
     width: 82px;
     border: 3px solid #FF914D;
     /* background-color: #ff914d; */
 }
+
 .linha_preta {
     width: 82px;
     height: 0px;
     border: 3px solid #333333;
 }
 
-.linha_servicos{
+.linha_servicos {
     padding-top: -5px;
     margin-top: -2px;
 }
@@ -286,8 +398,9 @@ body{
 
 .card_porquegetec {
     transition: transform .3s;
-    
+
 }
+
 .card_porquegetec::after {
     position: absolute;
     top: 0;
@@ -300,18 +413,22 @@ body{
     opacity: 0;
     z-index: -1;
 }
+
 .card_porquegetec:hover,
 .card_porquegetec:focus {
     transform: scale3d(1.1, 1.1, 1);
 }
+
 .card_porquegetec::after {
     opacity: 1;
 }
+
 /* ====== NOSSOS SERVICOS ====== */
 .card_servicos {
     transition: transform .3s;
-    
+
 }
+
 .card_servicos::after {
     position: absolute;
     top: 0;
@@ -324,10 +441,12 @@ body{
     opacity: 0;
     z-index: -1;
 }
+
 .card_servicos:hover,
 .card_servicos:focus {
     transform: scale3d(1.1, 1.1, 1);
 }
+
 .card_servicos::after {
     opacity: 1;
 }
@@ -402,27 +521,30 @@ body{
     height: fit-content;
     padding-top: 12vh !important;
 }
-    .secao_softwares::before {
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: fit-content;
-        
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 105%;
-        background-image: linear-gradient(180deg,
-         rgba(51,51,51,0.8044467787114846) 0%,
-         rgba(51,51,51,0.9865196078431373) 100%),
-          url('../imgs/softwares.jpg');
-        /* background-image: url('../imgs/softwares.jpg'); */
-        /* filter: brightness(0.5); */
-        z-index: -1; /* coloca o pseudo-elemento atrás do conteúdo da div */
-    }
+
+.secao_softwares::before {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content;
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 105%;
+    background-image: linear-gradient(180deg,
+            rgba(51, 51, 51, 0.8044467787114846) 0%,
+            rgba(51, 51, 51, 0.9865196078431373) 100%),
+        url('../imgs/softwares.jpg');
+    /* background-image: url('../imgs/softwares.jpg'); */
+    /* filter: brightness(0.5); */
+    z-index: -1;
+    /* coloca o pseudo-elemento atrás do conteúdo da div */
+}
+
 .titulo_primario_branco {
     color: #fdf7f2;
 }
@@ -451,7 +573,8 @@ body{
 .paragrafo_softwares p {
     padding-left: 5%;
 }
-.linha_vertical{
+
+.linha_vertical {
     height: 15%;
     border: 2px solid #ff914d;
 }
@@ -465,14 +588,15 @@ body{
     color: #FF914D;
 }
 
-.maps{
+.maps {
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
     padding: 0;
 }
 
-.contato_localizacao{
+.contato_localizacao {
     margin-top: 10vh;
 }
+
 /* ________________________________________________________________ */
 
 
@@ -544,21 +668,41 @@ body{
 
 
 /* _______________________________Footer_________________________________ */
-.footer{
-    background-color:#333333;
+.footer {
+    background-color: #333333;
     padding-top: 2%;
     padding-bottom: 2%;
     margin-bottom: -5%;
+}
+
+.footer_img {
+    height: 10vh;
 
 }
 
-.footer_img{
-    height: 7vh;
+.botao_email{
+    border: 1px solid #FDF7F2;
+    border-radius: 5px;
+    padding: 8px;
+    width: 50px;
+    /* margin-left: 48%; */
+
 }
 
-.logo_footer_img{
+.botao_email i{
+    color: #FDF7F2;
+    font-size: 1.23em;
+}
+
+.botao_email i:hover{
+    /* border: 3px solid #FDF7F2; */
+    color: #FF914D;
+}
+
+.logo_footer_img {
     max-width: 100%;
     max-height: 100%;
+
 }
 
 .forma_esquerda_solucoes {
@@ -581,12 +725,15 @@ body{
     margin-left: -8vw;
     margin-top: 7vh;
     position: absolute;
-
 }
 
+.texto_footer{
+    color: #FDF7F2;
+}
 
-.icon_footer{
+/* .icon_footer {
     color: #FDF7F2;
     font-size: 1.3em;
-}
+} */
+
 /* _____________________________________________________________ */
