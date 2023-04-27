@@ -595,6 +595,10 @@ body {
     color: #FF914D;
 }
 
+.icone_contato div h6 {
+    color: #333333;
+}
+
 .maps {
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
     padding: 0;
