@@ -70,5 +70,13 @@
         margin-left: 3vw;
     }
 
+    .card_servicos_ajuste_mobile {
+        display: flex;
+        justify-content: center;
+
+    }
+
+
+
 
 }

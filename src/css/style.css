@@ -428,6 +428,8 @@ body {
     opacity: 1;
 }
 
+
+
 /* ====== NOSSOS SERVICOS ====== */
 .card_servicos {
     transition: transform .3s;
@@ -438,7 +440,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 50px;
     height: 100%;
     transition: opacity 2s cubic-bezier(.165, .84, .44, 1);
     /* box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15); */
@@ -607,6 +609,8 @@ body {
 
 /* ====== NOSSOS SERVIÇOS ====== */
 
+
+
 .servicos_subtitulo {
     font-family: 'Archivo', sans-serif;
     font-size: 1.23em;
@@ -629,7 +633,9 @@ body {
 .card_servicos {
     border-left: solid 10px #FF914D;
     height: 250px;
-    width: fit-content;
+    /* width: fit-content; */
+    min-width: 310px;
+    max-width: 310px;
     z-index: 2;
 }
 
